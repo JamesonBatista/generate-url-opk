@@ -1,4 +1,4 @@
-##Instruções:
+## Instruções:
 
 Pré-requisitos:
 NodeJs (para verificar se tem o Node instalado, no terminal ou cmd execute _node --version_ deve retornar a versão, caso não baixar no Google)
