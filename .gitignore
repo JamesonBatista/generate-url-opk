@@ -46,12 +46,12 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-data/user.js
+# data/user.js
 # execute/
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
-user.js
-/user.js
+# user.js
+# /user.js
 # TypeScript cache
 *.tsbuildinfo
 
