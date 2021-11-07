@@ -1,4 +1,4 @@
-const user = require("../../user");
+const user = require("../../execute/user");
 
 var cpf = user.cpf;
 var cpf1 = cpf.replaceAll(".", "");

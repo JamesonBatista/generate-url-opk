@@ -1,4 +1,4 @@
-const user = require("../../user");
+const user = require("../../execute/user");
 const general = require("../general/general");
 
 const SendToEmail = (message, i, hour) => {
