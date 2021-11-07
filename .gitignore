@@ -50,6 +50,7 @@ data/user.js
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 user.js
+/user.js
 # TypeScript cache
 *.tsbuildinfo
 
