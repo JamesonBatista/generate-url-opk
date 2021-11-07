@@ -53,6 +53,7 @@ web_modules/
 user.js
 /user.js
 data/utils/certs/
+
 # TypeScript cache
 *.tsbuildinfo
 

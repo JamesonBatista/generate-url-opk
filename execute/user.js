@@ -6,7 +6,7 @@ module.exports = {
   email: "cittestsendemail@gmail.com",
   environment: env.TH,
   permissions: permissions.todas,
-  quantity: 2,
+  quantity: 1,
 };
 
 // module.exports = {

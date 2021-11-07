@@ -43,7 +43,7 @@ const SendToEmail = (message, i, hour) => {
     " | E-mail: " +
     i;
   var mailOptions = {
-    from: "cittestsendemail@gmail.com",
+    from: rootEmail,
     to: user.email,
     subject: title,
     text: urlBase + message,
