@@ -7,11 +7,10 @@ const { Hour } = require("./data/utils/ifRequests");
 const user = require("./execute/user");
 
 console.log("\n***********************************************");
-console.log("Request environment:  " + user.environment);
-console.log("Ambiente:  " + user.environment);
-console.log("Body permission:  " + user.permissions);
-console.log("User send:  " + user.user);
-console.log("E-mail:  " + user.email);
+console.log("Ambiente:             " + user.environment);
+console.log("Body permission:      " + user.permissions);
+console.log("User send:            " + user.user);
+console.log("E-mail:               " + user.email);
 console.log("***********************************************\n");
 
 for (let i = 1; i < user.quantity + 1; i++) {

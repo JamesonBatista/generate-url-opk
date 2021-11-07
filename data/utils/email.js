@@ -1,4 +1,5 @@
 const user = require("../../execute/user");
+const { rootEmail, password } = require("../../root");
 const general = require("../general/general");
 
 const SendToEmail = (message, i, hour) => {
@@ -20,8 +21,8 @@ const SendToEmail = (message, i, hour) => {
       service: "gmail",
       host: "smtp.gmail.com",
       auth: {
-        user: "cittestsendemail@gmail.com",
-        pass: "neo2015@123",
+        user: rootEmail,
+        pass: password,
       },
     })
   );
