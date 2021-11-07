@@ -2,8 +2,8 @@ const user = require("../../execute/user");
 
 var cpf = user.cpf;
 var cpf1 = cpf.replaceAll(".", "");
-var cpf2 = cpf1.replace(",", "");
-var cpf3 = cpf2.replace("-", "");
+var cpf2 = cpf1.replaceAll(",", "");
+var cpf3 = cpf2.replaceAll("-", "");
 cpf = cpf3;
 
 var todas = JSON.stringify({
