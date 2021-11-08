@@ -1,6 +1,8 @@
 const user = require("../../execute/user");
 const { rootEmail, password } = require("../../root");
 const general = require("../general/general");
+var nodemailer = require("nodemailer");
+var smtpTransport = require("nodemailer-smtp-transport");
 
 const SendToEmail = (message, i, hour) => {
   var urlBase;
@@ -12,9 +14,6 @@ const SendToEmail = (message, i, hour) => {
 
   if (user.environment.toLowerCase() == "TI".toLowerCase())
     urlBase = general.concatUrl_TI;
-
-  var nodemailer = require("nodemailer");
-  var smtpTransport = require("nodemailer-smtp-transport");
 
   var transporter = nodemailer.createTransport(
     smtpTransport({

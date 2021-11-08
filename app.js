@@ -13,9 +13,9 @@ console.log("User send:            " + user.user);
 console.log("E-mail:               " + user.email);
 console.log("***********************************************\n");
 
-for (let i = 1; i < user.quantity + 1; i++) {
-  request.post(optionRequest, (error, response, body) => {
-    var obj = JSON.parse(body);
+request.post(optionRequest, (error, response, body) => {
+  var obj = JSON.parse(body);
+  for (let i = 1; i < user.quantity + 1; i++) {
     request.post(RequestConsent(obj.access_token), (error, response, body) => {
       var consents = JSON.parse(body);
       request.post(
@@ -28,5 +28,5 @@ for (let i = 1; i < user.quantity + 1; i++) {
         }
       );
     });
-  });
-}
+  }
+});
