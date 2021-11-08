@@ -1,13 +1,18 @@
-const { IfResolveAud, IfResolveEnvrironment } = require("../utils/ifRequests");
+const {
+  IfResolveAud,
+  IfResolveEnvrironment,
+  IfClient_Id,
+} = require("../utils/ifRequests");
 const httpsAgent = require("../utils/data");
 const general = require("../general/general");
+const user = require("../../execute/user");
 
 function RequestGenerateUrl(consent) {
   var genurl = {
-    client_id: "2d3d7e39-a219-49f1-bef6-9e673b6106aa",
+    client_id: IfClient_Id(),
     consent_id: consent,
     redirect_uri: "https://www.bradesco.com.br/mock1",
-    brand: "bradesco",
+    brand: user.TPP.toLowerCase(),
     aud: IfResolveAud(),
   };
   var requestOptions = {

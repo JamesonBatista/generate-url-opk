@@ -3,6 +3,7 @@ const httpsAgent = require("../utils/data");
 const {
   IfResolveHosts,
   IfResolveEnvrironment,
+  IfClient_Id,
 } = require("../utils/ifRequests");
 
 const optionRequest = {
@@ -13,7 +14,7 @@ const optionRequest = {
   agent: httpsAgent,
   url: IfResolveEnvrironment() + general.endpoint_token,
   form: {
-    client_id: "2d3d7e39-a219-49f1-bef6-9e673b6106aa",
+    client_id: IfClient_Id(),
     grant_type: "client_credentials",
     scope: "consents openid",
   },

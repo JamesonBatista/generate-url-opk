@@ -94,10 +94,21 @@ function Hour() {
   return date_full;
 }
 
+function IfClient_Id() {
+  var clientId;
+  if (user.TPP.toLowerCase() == "bradesco")
+    clientId = general.client_id_BRADECO;
+
+  if (user.TPP.toLowerCase() == "next") clientId = general.client_id_NEXT;
+
+  return clientId;
+}
+
 module.exports = {
   IfResolveBody,
   IfResolveEnvrironment,
   IfResolveAud,
   IfResolveHosts,
   Hour,
+  IfClient_Id,
 };

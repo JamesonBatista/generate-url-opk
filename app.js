@@ -7,6 +7,8 @@ const { Hour } = require("./data/utils/ifRequests");
 const user = require("./execute/user");
 
 console.log("\n***********************************************");
+console.log("CPF:                  " + user.cpf);
+console.log("TPP:                  " + user.TPP);
 console.log("Ambiente:             " + user.environment);
 console.log("Body permission:      " + user.permissions);
 console.log("User send:            " + user.user);
@@ -15,6 +17,9 @@ console.log("***********************************************\n");
 
 request.post(optionRequest, (error, response, body) => {
   var obj = JSON.parse(body);
+  // console.log(body);
+  // console.log(optionRequest);
+
   for (let i = 1; i < user.quantity + 1; i++) {
     request.post(RequestConsent(obj.access_token), (error, response, body) => {
       var consents = JSON.parse(body);

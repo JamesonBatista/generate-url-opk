@@ -46,8 +46,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-data/user.js
-execute/
+# data/user.js
+# execute/
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 user.js
